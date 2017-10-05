@@ -3,16 +3,33 @@
 =================================================================*/
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 #nav1 ul.nav.navbar-nav.navbar-left {
-    width: 100%;
+    width: 41%;
 }
-    div#LogoBrand{
-        margin-right: 20px;
-    }
+    div#LogoBrand {
+    margin-right: 0;
+}
+    
     
        .nav>li {
-           position: relative;
-           display: inline-block;
-       }
+    position: relative;
+    display: inline-block;
+    width: 40px;
+}
+#nav1 .nav>li {
+    position: relative;
+    display: inline-block;
+    width: 61px;
+    float: left;
+}
+#nav2 .nav>li {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+}
+    ul#navright1 li {
+    width: 40px !important;
+    float: none !important;
+}
        
        i.fa.fa-instagram {
             background: linear-gradient( #400080, transparent), linear-gradient( 200deg, #d047d1, #ff0000, #ffff00);
@@ -25,24 +42,29 @@
             padding-top: 1px;
         }
     .logoImage img {
-        width: 118px !important;
-        margin-top: 0;
-        cursor: pointer;
-        margin-left: 59px;
-        position: relative;
-        left: 14px;
-    }
-    #nav1 ul.nav.navbar-nav.navbar-right {
-        padding-top: 10px;
-    }
+    width: 118px !important;
+    margin-top: 0;
+    cursor: pointer;
+    margin-left: 59px;
+    position: relative;
+    left: 14px;
+    margin-bottom: 9px;
+}
+ #nav1 ul.nav.navbar-nav.navbar-right {
+    padding-top: 0px;
+    width: 100%;
+    margin-top: 0;
+}
     .navbar-nav {
         margin: 7.5px -15px;
         margin-bottom: -8px;
     }
-    ul.nav.navbar-nav.navbar-left li a {
-        color: #000;
-        z-index: 2;
-    }
+ ul.nav.navbar-nav.navbar-left li a {
+    color: #000;
+    z-index: 2;
+    padding: 0px;
+    font-size: 12px;
+}
       #nav1  .container {
         padding-left: 0;
     }
@@ -124,7 +146,7 @@
     display: block;
     padding: 10px 8px;
     margin-bottom: 8px;
-    font-size: 14px;
+    font-size: 12px;
 }
     #nav2 .btn-default {
     color: #ccc;
@@ -185,6 +207,42 @@ ul#profileWrapper {
     width: 96%;
    
 }
+/*    loader*/
+    .loader {
+    border: -1px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid #20a6a9;
+    border-bottom: 10px solid #20a6a9;
+    width: 73px;
+    height: 73px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1.2s linear infinite;
+    position: absolute;
+    z-index: 1000;
+}
+.text-center {
+    position: absolute;
+    left: 35%;
+    top: 37%;
+}
+    .brandsIcon {
+    display: none;
+}
+    .profile-bottom {
+        width: 100%;
+    }
+    .profile {
+    min-height: 297px;
+    }
+        
+.profile .form-control {
+    display: block;
+    width: 110%;
+    }
+    i.fa.fa-chevron-right ,  i.fa.fa-chevron-left {
+    font-size: 20px;
+}
+    
 
 }
 
@@ -682,6 +740,14 @@ ul#SearchWrapper {
     
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1360px) {
+    #phoneBlocks {
+   
+    height: 654px;
+}
+    
+}
+
 @media only screen and (max-width: 324px ) and (min-width: 319px)
 {
     .productBefore {
@@ -691,6 +757,14 @@ ul#SearchWrapper {
         padding-left: 23px;
         margin-top: 2px;
     }
+    #phoneBlocks {
+    background-image: url(/images/phone-blocks.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 627px;
+}
 }
 
 

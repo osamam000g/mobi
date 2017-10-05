@@ -3799,7 +3799,17 @@ p.w3ls_para {
     }
 }
 
+@media (max-width: 480px){
     
+.navbar-default {
+    width: 100%;
+}
+    .navbar-nav > li {
+    margin: 0 0px 0 0;
+    width: 100%;
+    text-align: center;
+}    
+}
 
 
 
