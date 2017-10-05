@@ -1,0 +1,51 @@
+    <link rel="stylesheet" href="/stylesheets/bootstrap-rtl.css">
+    <link rel="stylesheet" href="/stylesheets/styleRTL.css">
+
+   <div class="contianer" ng-controller="loginViewCTRL">
+    
+
+	<div class="">
+<!--		<h1><a href="index.html">Minimal </a></h1>-->
+		<div class="login-bottom">
+			<h2>تسجيل الدخول</h2>
+			<form ng-submit="loginView(logdata)">
+			<div class="col-md-12">
+			<div class="alert alert-success" ng-show="show.messageSuccessShow">
+			    {{show.messageSuccess}}
+			</div>
+			<div class="alert alert-danger" ng-show="show.errSuccessShow">
+			    {{show.errSuccess}}
+			</div>
+			<div class="jumbotron text-center" ng-show="show.loading">
+			    <i class="fa fa-spinner fa-spin" style="font-size:40px" ></i>
+			</div>
+				<div class="login-mail">
+					<input type="text" placeholder="ادخل البريد الالكتروني" required="" ng-model="logdata.email">
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="login-mail">
+					<input type="password" placeholder="ادخل  كلمه المرور " required="" ng-model="logdata.password">
+					
+					<i class="fa fa-lock"></i>
+				</div>
+
+
+			
+			</div>
+			<div class="col-md-6 login-do">
+				
+				<label class="hvr-shutter-in-horizontal login-sub">
+					<input type="submit" value="تسجيل الدخول">
+					</label>
+				<br>
+					
+					<p>ليس عند حساب ؟</p>
+				<a ng-href="{{href.signView}}" class="hvr-shutter-in-horizontal">انشاء حساب </a>
+			</div>
+
+			
+			<div class="clearfix"> </div>
+			</form>
+		</div>
+	</div>
+</div>

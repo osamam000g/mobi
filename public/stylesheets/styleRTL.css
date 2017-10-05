@@ -1,0 +1,90 @@
+ul#SearchWrapper {
+    margin-right: 52px;
+        margin-left: 0;
+}
+figure.effect-roxy img {
+   
+    -webkit-transform: translate3d(50px,0,0);
+    transform: translate3d(50px,0,0);
+    -moz-transform: translate3d(50px,0,0);
+    -o-transform:translate3d(50px,0,0);
+    -ms-transform: translate3d(50px,0,0);
+}
+.sns-nav-tabs-warpper-icon:before {
+/*    content: ' الموبيل و الاكسسوارات' !important;*/
+    position: absolute !important;
+    top: 23% !important;
+    right: 100% !important;
+     border-left-color: transparent !important; 
+    border-right-color: #20a6a9 !important;
+}
+.sns-nav-tabs-warpper-icon:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 137%;
+}
+#phoneBlocks .title {
+    text-align: right;
+    color: #21a6a9;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 40px;
+}
+#phoneBlocks .fontAwe {
+    float: right;
+}
+#phoneBlocks .content {
+    text-align: right;
+    font-size: 14px;
+    padding-right: 52px;
+    /* padding-top: 2px; */
+}
+
+#footer .col-md-4{
+    float: left;
+}
+.pagination>li {
+    display: inline;
+    float: left;
+}
+.col-md-8.single-right-left.simpleCart_shelfItem {
+    text-align: center;
+}
+.col-md-4.single-right-left {
+    float: left;
+}
+
+.resp-tabs-list li {
+ 
+    float: right !important;
+   
+}
+
+.single_page_agile_its_w3ls {
+   
+    border-radius: 19px;
+}
+.loader {
+    border: -1px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid #20a6a9;
+    border-bottom: 10px solid #20a6a9;
+    width: 87px !important;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1.2s linear infinite;
+    position: absolute;
+    z-index: 1000;
+    float: left
+}
+.text-center {
+    position: absolute;
+    right: 50%;
+    top: 37%;
+}
+.col-xs-offset-3 {
+    margin-left: 25%;
+    margin-right: 0;
+}

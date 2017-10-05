@@ -1,0 +1,83 @@
+
+	  <div class=" profile">
+        
+		<div class="profile-bottom">
+		<form ng-submit="updateUser(data)">
+		    
+		    
+		    
+			<h3 class="pull-left"><i class="fa fa-user"></i>Profile</h3>
+			
+			
+			<h3 class="pull-right">
+			<a href="">
+			<i class="fa fa-pencil-square-o"></i>    
+			</a>
+            </h3>
+            <br>
+            <div class="clearfix"></div>
+			<div class="profile-bottom-top">
+<!--
+			<div class="col-md-4 profile-bottom-img">
+				<img src="images/pr.jpg" alt="">
+			</div>
+-->
+       
+        <div class="alert alert-success" ng-show="show.successMessageShow">{{successMessage}}</div>
+			<div class="alert alert-danger" ng-show="show.errMessageShow">{{errMessage}}</div>
+			<div class="jumbotron text-center" ng-show="show.loading">
+            
+                
+			    <i class="fa fa-spinner fa-spin" style="font-size:39px"></i>
+            
+             
+			</div>
+			<div class="col-md-8 profile-text">
+				<h6></h6>
+				<table>
+                    <tr>
+                        <td>phone</td>
+                        <td><input type="text" class="form-control" placeholder="new phone number" ng-model="data.phone" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td> <input type="text" class="form-control" placeholder="your new email"  ng-model="data.email" disabled></td>
+                    </tr>
+                     <tr>
+                        <td>Username</td>
+                        <td> <input type="text" class="form-control" placeholder=" your first and last name"  ng-model="data.username" disabled></td>
+                    </tr>
+                  
+                   
+                    <tr>
+                        <td>Password</td>
+                        <td> <input type="password" class="form-control" placeholder="Enter password" ng-model="data.password"></td>
+                    </tr>
+                    <tr>
+                        <td>New password</td>
+                        <td> <input type="password" class="form-control" placeholder="New password" ng-model="data.newPassword"></td>
+                    </tr>
+                      <tr>
+                        <td>Repeat password</td>
+                        <td> <input type="password" class="form-control" placeholder="Repeat password" ng-model="data.rePassword"></td>
+                    </tr>
+                   
+                </table>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+			
+			<div class="profile-btn">
+
+                <button type="submit" href="#" class="btn bg-red">Save changes</button>
+           <div class="clearfix"></div>
+			</div>
+			 
+              </form>
+
+		</div>
+		
+	</div>
+	
+	
+	

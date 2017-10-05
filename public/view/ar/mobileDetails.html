@@ -1,0 +1,172 @@
+    <link rel="stylesheet" href="/stylesheets/bootstrap-rtl.css">
+    <link rel="stylesheet" href="/stylesheets/styleRTL.css">
+
+
+<link rel="stylesheet" href="/stylesheets/flexslider.css" type="text/css" media="screen" />
+<link href="/stylesheets/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+
+<style>
+/*
+img{
+    width: 100px;
+    height: 100%;
+    }
+*/
+</style>
+  <!-- banner-bootom-w3-agileits -->
+  <br>
+<div class="banner-bootom-w3-agileits">
+	<div class="container">
+	     <div class="col-md-4 single-right-left ">
+			<div class="grid images_3_of_2">
+				<div class="flexslider">
+					
+					<ul class="slides">
+						<li data-thumb={{url}}>
+							<div class="thumb-image"> <img ng-src="/{{url.slice(7)}}" data-imagezoom="true" class="img-responsive"> </div>
+						</li>
+
+					</ul>
+					<div class="clearfix"></div>
+				</div>	
+			</div>
+		</div>
+		<div class="col-md-8 single-right-left simpleCart_shelfItem">
+                <br>
+                <br>
+                <br>
+					<h3>{{name}}</h3>
+					<p><span class="item_price"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{priceAfter}}</span> <del>{{priceBefore}}</del></p>
+					<div class="descriptio col-md-12">
+						<h5 style="color: rgba(0, 0, 0, 0.44)"><b style="font-size:16px; color: black">التفاصيل : </b> <br> <br>{{desc}}</h5>
+						<h5 style="color: rgba(0, 0, 0, 0.44)" ng-show="hideShow"><b style="font-size:16px; color: rgba(0, 0, 0, 1)">الالوان : </b> 
+						 {{colorAvaliable}}</h5>
+					</div>
+
+					
+		      </div>
+	 			<div class="clearfix"> </div>
+				<!-- /new_arrivals --> 
+	<div class="responsive_tabs_agileits"> 
+				<div id="horizontalTab">
+						<ul class="resp-tabs-list">
+							<li>تفاصيل </li>
+						</ul>
+					<div class="resp-tabs-container">
+					<!--/tab_one-->
+					   <div class="tab1">
+
+							<div class="single_page_agile_its_w3ls">
+							   <table class="table table-hover"  ng-show="hideShow">
+
+                                <tbody>
+                                  <tr>
+                                    <th>الماركه</th>
+                                    <th>{{brand}}</th>
+                                  </tr>
+                                  <tr>
+                                    <td>الكاميرا</td>
+                                    <td>{{camera}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>الشريحه</td>
+                                    <td>{{sim}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>الوزن</td>
+                                    <td>{{weight}}</td>
+                                  </tr>
+                                 <tr>
+                                    <td>الابعاد</td>
+                                    <td>{{dimention}}</td>
+                                  </tr>
+                                   <tr>
+                                    <td>الالوان</td>
+                                    <td>{{colorAvaliable}}</td>
+                                  </tr>
+                       </tbody>
+                              </table>
+                              <table class="table table-hover"  ng-hide="hideShow">
+                                <tbody>
+                                  <tr>
+                                    <th>التفاصيل</th>
+                                    <th>{{desc}}</th>
+                                  </tr>
+                                 
+
+                                </tbody>
+                              </table>
+                              
+							</div>
+							
+                              
+                              
+							</div>
+						</div>
+					
+					</div>
+				</div>	
+			</div>
+	     
+	     </div>	   
+ <br>
+ <br>
+<!--//single_page-->
+
+<!-- js -->
+    <script src="/javascripts/jquery-2.1.4.min.js" > </script>
+
+<script src="/javascripts/imagezoom.js"></script>
+					
+<!--<script src="/javascripts/easy-responsive-tabs.js"></script>    -->
+<script>
+	$(document).ready(function () {
+        
+//	$('#horizontalTab').easyResponsiveTabs({
+//	type: 'default',
+//	width: 'auto',
+//	fit: true,  
+//	closed: 'accordion',
+//	activate: function(event) { 
+//	var $tab = $(this);
+//	var $info = $('#tabInfo');
+//	var $name = $('span', $info);
+//	$name.text($tab.text());
+//	$info.show();
+//	}
+//	});
+//        
+//	$('#verticalTab').easyResponsiveTabs({
+//	type: 'vertical',
+//	width: 'auto',
+//	fit: true
+//	});
+        
+	});
+</script>
+<!-- FlexSlider -->
+<script src="/javascripts/jquery.flexslider.js"></script>
+						<script>
+						// Can also be used with $(document).ready()
+							$(window).load(function() {
+								$('.flexslider').flexslider({
+								animation: "slide",
+								controlNav: "thumbnails"
+								});
+							});
+						</script>
+						<script>
+						// Can also be used with $(document).ready()
+							$(document).ready(function() {
+								$('img-responsive').css({
+								width: "100%",
+								
+								});
+							});
+						</script>
+<style>
+
+.flexslider .slides > li {
+    display: block;
+    }</style>
+

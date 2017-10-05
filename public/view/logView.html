@@ -1,0 +1,55 @@
+<div class="contianer" ng-controller="loginViewCTRL">
+    
+
+	<div class="">
+<!--		<h1><a href="index.html">Minimal </a></h1>-->
+		<div class="login-bottom">
+			<h2>Login</h2>
+			<form ng-submit="loginView(logdata)">
+			<div class="col-md-12">
+			<div class="alert alert-success" ng-show="show.messageSuccessShow">
+			    {{show.messageSuccess}}
+			</div>
+			<div class="alert alert-danger" ng-show="show.errSuccessShow">
+			    {{show.errSuccess}}
+			</div>
+			<div class="jumbotron text-center" ng-show="show.loading">
+			    <i class="fa fa-spinner fa-spin" style="font-size:40px" ></i>
+			</div>
+				<div class="login-mail">
+					<input type="text" placeholder="Email" required="" ng-model="logdata.email">
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="login-mail">
+					<input type="password" placeholder="Password" required="" ng-model="logdata.password">
+					
+					<i class="fa fa-lock"></i>
+				</div>
+                       <a class="news-letter " href="/">
+						     Forget Password
+					   </a>
+
+			
+			</div>
+			<div class="col-md-6 login-do">
+				
+				<label class="hvr-shutter-in-horizontal login-sub">
+					<input type="submit" value="login">
+					</label>
+				<br>
+					
+					<p>Do not have an account?</p>
+				<a href="/signView" class="hvr-shutter-in-horizontal">Signup</a>
+			</div>
+<!--
+			<div class="col-md-6 login-do">
+					<a href="/auth/facebook" target="_blank" class="hvr-shutter-in-horizontal success"><i class="fa fa-facebook"></i> Facebook</a>
+				<br>
+                </div>
+-->
+			
+			<div class="clearfix"> </div>
+			</form>
+		</div>
+	</div>
+</div>

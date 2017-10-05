@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOBI PARK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+
+    <link rel="stylesheet" href="/stylesheets/demo.css">
+<style>
+  .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #20a6a9;
+    border-color: #20a6a9;
+}
+    .pagination>li:first-child>a, .pagination>li:first-child>span {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px !important;
+}
+    .pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+    .pagination a {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+</style>
+
+</head>
+<!--ng-controller="indexCTRL"-->
+<body ng-app="mobi"  ng-controller="homeCTRL" >
+<div class="text-center" ng-show="loaderShow">
+    <div class="loader col-xs-8 col-xs-offset-3">  </div>
+</div>
+<div ng-show="showIndex"  class="ng-cloak">
+    
+<!--========================================================
+                             nav1
+  ===========================================================-->
+   <nav class="navbar navbar-default" id="nav1">
+  <div class="container">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="" id="bs-example-navbar-collapse-2">
+     <ul class="nav navbar-nav navbar-left">
+         
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+               <i class="fa fa-globe"></i>
+                    <div class="lang">
+
+                   &nbsp;   {{nav.lang}}
+              <b class="caret"></b>
+                    </div>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a ng-click="langChange(false)">العربيه</a></li>
+                
+                <li><a ng-click="langChange(true)">ُEnglish</a></li>
+               
+              </ul>
+            </li>
+            <li class="AccountBtn" ng-show="loginBtn">
+              <a ng-href="{{href.logView}}"> 
+              <i class="glyphicon glyphicon-log-in"></i>
+                    <div class="lang">
+                       &nbsp;   {{nav.sign}}
+                    </div>
+              </a>
+            </li>
+        
+      </ul>
+     
+      <div class="nav navbar-nav" id="LogoBrand">   
+         <div class="logoImage">
+             <a ng-href="{{href.home}}">
+                 
+          <img src="/images/MOBI-PARK-LOGO.png" alt="">
+             </a>
+         </div>  
+      </div>
+     
+      <ul class="nav navbar-nav navbar-right" id="navright1">
+        <li><a href="https://www.facebook.com/mobiparkeg/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        <li><a href="https://www.instagram.com/mobiparkeg/"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--  ================================================
+                           nav 2
+==============================================================-->
+    <nav class="navbar navbar-default" id="nav2">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+        </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a  ng-href="{{href.home}}" >{{nav.home}}</a></li>
+        
+        <li class="dropdown">
+              <a ng-href="{{href.mobiles}}" class="dropdown-toggle" data-toggle="dropdown">{{nav.mobiles}}
+<!--               <b class="caret hidden-xs"></b>-->
+               </a>
+<!--
+              <ul class="dropdown-menu hidden-xs">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+-->
+            </li>
+            
+             <li class="dropdown ">
+              <a ng-href="{{href.tablets}}" class="dropdown-toggle" data-toggle="dropdown">{{nav.tablets}}
+<!--               <b class="caret hidden-xs"></b>-->
+               </a>
+<!--
+              <ul class="dropdown-menu hidden-xs">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+-->
+            </li>
+            
+             <li class="dropdown">
+              <a ng-href="{{href.access}}" class="dropdown-toggle" data-toggle="dropdown">{{nav.access}}
+<!--               <b class="caret hidden-xs"></b>-->
+               </a>
+<!--
+              <ul class="dropdown-menu hidden-xs">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+-->
+            </li>
+        <li><a ng-href="{{href.contact}}">{{nav.contact}}</a></li>
+        
+       
+      </ul>
+      
+      <ul class="nav navbar-nav " id="SearchWrapper" ng-controller="searchCTRL">
+             <form  ng-submit="search(searchText)">
+                <div class="input-group">
+                  
+                  <input type="text" class="form-control" placeholder="{{nav.search}}" ng-model="searchText" ng-keyup="$event.keyCode == 13 && search(searchText)">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class='fa fa-search'></i></button>
+                  </span>
+                </div>
+<!--                <input type="text" class="form-control" placeholder="Search" id="search">-->
+            </form>
+            
+         
+      </ul>
+      
+         <ul class="nav navbar-nav navbar-right" id="profileWrapper" ng-show="profileBtn">
+             <li class="dropdown">
+                <a href="/profileView" class="data-toggle" data-toggle="dropdown">
+<!--                <img src="/images/pr.jpg" alt=""> -->
+                 {{username}} <b class="caret hidden-xs"></b></a>
+                <ul class="dropdown-menu hidden-xs">
+                    <li><a ng-href="{{href.profileView}}"> {{nav.profile}}</a>  </li>
+<!--                    <li><a href="/editProfile">Edit Profile</a>  </li>-->
+                    <li><a ng-click="logout()">{{nav.logout}}</a>  </li>
+                </ul>
+            </li>
+           
+        </ul>
+    </div>
+  </div>
+</nav>
+ 
+
+
+<!--=====================================================
+                    angular-View
+==========================================================-->
+   
+    <div ng-view></div>  
+ 
+<!--===================================================
+                        footer
+=======================================================-->
+   <div id="footer">
+       <div class="container">
+           <div class="col-md-4 col-xs-12  col-sm-4">
+            <a ng-href="{{href.home}}">
+                
+               <img src="/images/MOBI-PARK-LOGO.png" width="100%" alt="">
+            </a>
+           </div>
+           <div class="col-md-4 contact col-xs-12 col-sm-4">
+              <div class="title">
+               {{nav.touch}}
+               <br>
+              </div>
+               <br>
+                <div class="content">    
+                    {{nav.phone}}: <span class="phonenom">{{nav.phonenom}} </span> <br>
+                    {{nav.work}}: {{nav.workInfo}} <br>
+<!--                    Email: our-mail@example.com <br>-->
+                    {{nav.adress}}: {{nav.adressInfo}} 
+
+
+
+                </div>
+           </div>
+           <div class="col-md-4 footerSocial col-xs-12 col-sm-4">
+              <center>
+                  <a href="https://www.facebook.com/mobiparkeg/">
+                      
+               <i class="fa fa-facebook-square"></i> &nbsp;
+                  </a>
+               <br>
+               <a href="">
+                   
+               <i class="fa fa-youtube-play"></i>&nbsp;
+               </a>
+               <br>
+               <a href="https://www.instagram.com/mobiparkeg/">
+                   
+               <i class="fa fa-instagram"></i>&nbsp;
+               </a>
+               <br>
+               <a href="">
+                   
+               <i class="fa fa-google-plus"></i>&nbsp;
+               </a>
+              </center>
+           </div>
+       </div>
+   </div>
+   
+   <div id="footer1">
+       <div class="copy">
+           <center>
+              Copyright © 2015 
+              <a href="http://catalogeg.com">
+                   <i class="colorGreen">        
+                      Catalog-eg
+                    </i>
+              </a>
+           
+             . All rights reserved
+           </center>
+       </div>
+   </div>
+    
+</div>
+
+    
+    <script src="/javascripts/jquery.min.js" > </script>
+
+
+
+    <script src="/javascripts/angular.min.js" > </script>
+    <script src="/javascripts/angular-route.min.js" > </script>
+    <script src="/javascripts//bootstrap.min.js" > </script>
+
+    <script src="/javascripts/script.js" ></script>
+    <script src="/javascripts/app.js" ></script>
+    <script src="/javascripts/viewCTRL/homeCTRL.js" ></script>
+    <script src="/javascripts/viewCTRL/loginCTRL.js" ></script>
+    <script src="/javascripts/viewCTRL/mobileCTRL.js" ></script>
+    <script src="/javascripts/viewCTRL/accessCTRL.js" ></script>
+    <script src="/javascripts/viewCTRL/tabletsCTRL.js" ></script>
+    <script src="/javascripts/viewCTRL/productDetailsCTRL.js" ></script>   
+    <script src="/javascripts/viewCTRL/profileViewCTRL.js" ></script>   
+    <script src="/javascripts/viewCTRL/editProfileCTRL.js" ></script>   
+    <script src="/javascripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+
+
+</body>
+</html>

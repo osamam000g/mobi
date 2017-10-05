@@ -1,0 +1,272 @@
+    <link rel="stylesheet" href="/stylesheets/bootstrap-rtl.css">
+    <link rel="stylesheet" href="/stylesheets/styleRTL.css">
+
+        <link rel="stylesheet" href="/stylesheets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/stylesheets/owl.theme.default.min.css">
+    <script src="/javascripts/owl.carousel.min.js"></script>
+<div ng-controller="homeCTRL">
+    
+
+<!--=================================================== 
+                    Slider
+=====================================================-->
+ <div id="slider">
+     <div class="owl-carousel" >
+          <div><img src="/images/slide1.PNG" alt=""> </div>
+          <div><img src="/images/slide3.jpg" alt=""> </div>         
+    </div>
+ </div>
+ 
+ 
+<!--===================================================================     
+                        AfterSlider#col
+====================================================================-->
+ <div class="banner_bottom_agile_info">
+	    <div class="container">
+            <div class="banner_bottom_agile_info_inner_w3ls">
+    	           <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
+						<figure class="effect-roxy">
+							<img src="/images/bottom1.jpg" alt=" " class="img-responsive" />
+							<figcaption>
+								<h3><span>V</span>irtual Reality </h3>
+								<p> Headsets</p>
+							</figcaption>			
+						</figure>
+					</div>
+					 <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
+						<figure class="effect-roxy">
+							<img src="/images/bottom2.jpg" alt=" " class="img-responsive" />
+							<figcaption>
+								<h3><span>S</span>mart Watch</h3>
+								<p>New Arrivals</p>
+							</figcaption>			
+						</figure>
+					</div>
+					<div class="clearfix"></div>
+		    </div> 
+		 </div> 
+    </div>
+
+<!--=================================================================
+                            Products
+====================================================================-->
+<br>
+<br>
+<div id="products">
+    
+	<div class="new_arrivals_agile_w3ls_info"> 
+		<div class="container">
+        <div class="sns-nav-tabs-warpper-icon"> 
+         <i class="fa fa-mobile"></i>
+    </div>
+<!--		    <h3 class="wthree_text_info">New <span>Arrivals</span></h3>		-->
+				<div id="horizontalTab">
+					<div class="resp-tabs-container">
+					<!--/tab_one-->
+						<div class="tab1">
+							<div class="col-md-3 product-men"  ng-repeat="pro in pro2 | limitTo:4">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img  ng-src="/{{pro.url.slice(7)}}" alt="" class="pro-image-front">
+										<img  ng-src="/{{pro.url.slice(7)}}" class="pro-image-back">
+											<div class="men-cart-pro">
+<!--
+												<div class="inner-men-cart-pro">
+													<a ng-href="/productDetails/:{{pro._id}}" class="link-product-add-cart">View More</a>
+												</div>
+-->
+											</div>
+											<span class="product-new-top">جديد</span>
+											
+									</div>
+									<div class="item-info-product ">
+										<h4><a ng-href="/productDetails/:{{pro._id}}">{{pro.name}}</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$ {{pro.priceAfter}}</span>
+											<del>$ {{pro.priceBefore}}</del>
+										</div>
+										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+															<form action="{{'/productDetails/:' + pro._id}}" >
+																<fieldset>
+																	<input type="hidden"  value="_cart" />
+																	<input type="hidden"  value="1" />
+																	<input type="hidden" value=" " />
+																	<input type="hidden"  value="Formal Blue Shirt" />
+																	<input type="hidden"  value="30.99" />
+																	<input type="hidden" value="1.00" />
+																	<input type="hidden"  value="USD" />
+																	<input type="hidden" value=" " />
+																	<input type="hidden" value=" " />
+																	<input type="submit"  value="المزيد" class="button" />
+																</fieldset>
+															</form>
+														</div>
+																			
+									</div>
+								</div>
+							</div>
+	<div class="col-md-3 product-men"  ng-repeat="pro in pro1 | limitTo:4">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img  ng-src="/{{pro.url.slice(7)}}" alt="" class="pro-image-front">
+										<img  ng-src="/{{pro.url.slice(7)}}" class="pro-image-back">
+											<div class="men-cart-pro">
+<!--
+												<div class="inner-men-cart-pro">
+													<a ng-href="/productDetails/:{{pro._id}}" class="link-product-add-cart">Quick View</a>
+												</div>
+-->
+											</div>
+											<span class="product-new-top">جديد</span>
+											
+									</div>
+									<div class="item-info-product ">
+										<h4><a ng-href="/productDetails/:{{pro._id}}">{{pro.name}}</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$ {{pro.priceAfter}}</span>
+											<del>$ {{pro.priceBefore}}</del>
+										</div>
+										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+															<form action="{{'/productDetails/:' + pro._id}}">
+																<fieldset>
+																	<input type="hidden"  value="_cart" />
+																	<input type="hidden" value="1" />
+																	<input type="hidden"  value=" " />
+																	<input type="hidden"  value="Formal Blue Shirt" />
+																	<input type="hidden"  value="30.99" />
+																	<input type="hidden"  value="1.00" />
+																	<input type="hidden"  value="USD" />
+																	<input type="hidden"  value=" " />
+																	<input type="hidden" value=" " />
+																	<input type="submit"  value="المزيد" class="button" />
+																</fieldset>
+															</form>
+														</div>
+																			
+									</div>
+								</div>
+							</div>
+
+							<div class="clearfix"></div>
+						</div>
+					
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+		</div>
+
+ 
+ <br>
+ <br>
+ <!--=====================================================
+                    phoneBlocks
+==========================================================-->
+<div id="phoneBlocks">
+    <div class="container">
+        <center>
+              <div class="Service col-md-6 col-md-offset-3">
+
+
+               <div class="title">
+                 خدمه 7 / 24
+
+               </div>
+               <div class="fontAwe">
+                   <i class="fa fa-check"></i>
+               </div>
+               <div class="content">
+                  <br>
+                  نوفر لك خدمه 24 ساعه جميع ايام الاسبوع  اذا كنت تريد تصليح فوري لجهازك لجميع عملائنا 
+               </div>
+             </div>
+             <div class="Service col-md-6 col-md-offset-3">
+
+
+               <div class="title">
+                 الاضارا الناتجه عن المياه لهاتفك
+
+
+               </div>
+               <div class="fontAwe">
+                 <i class="fa fa-tint"></i>
+               </div>
+               <div class="content">
+                   نحن خبراء معتمدون في تصليح الأضرار الناتجه عن وقوع هاتفك في المياه، ونحن نستخدم الأدوات والمعدات الأكثر تقدما في هذه الصناعة
+                   
+               </div>
+             </div>
+             <div class="Service col-md-6 col-md-offset-3">
+
+
+               <div class="title">
+مشاكل سماعه هاتفك 
+               </div>
+               <div class="fontAwe">
+                <i class="glyphicon glyphicon-headphones"></i>
+               </div>
+               <div class="content">
+             
+                    هل تواجه مشاكل مع سماهه  الهاتف الخليوي الخاص بك؟ قد تحتاج إلى إصلاحه. يمكن أن تكون المشاكل مع مكبر الصوت الخاص بك من
+                    
+                     سقوط في المياه او وقوع الهاتف المباشر علي الارض
+               </div>
+             </div>
+               <div class="Service col-md-6 col-md-offset-3">
+
+
+               <div class="title">
+              تغير شاشه هانفك 
+
+               </div>
+               <div class="fontAwe">
+                  <i class="glyphicon glyphicon-phone"></i>
+               </div>
+               <div class="content">
+              
+                 
+                     
+                     
+                     
+                     إذا كنت قد تضررت شاشة الهاتف المحمول الخاص بك  ربما كنت أسقطت أو جلس في حين كان الجهاز في جيبك
+                     
+                       ربما تفقد الامل في تصليح هاتفك  معنا لا تفقد الامل
+                     
+               </div>
+             </div>
+        </center>
+    </div>
+</div>
+<script>
+// Slider
+//=======================================================   
+    
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel(
+        {
+ 
+            // Most important owl features
+            items : 1,
+            //Autoplay
+            autoplay: 2000,
+            stopOnHover : false,
+            nav: true,
+            navText: [
+                    "<i class='fa fa-chevron-left'></i>",
+                    "<i class='fa fa-chevron-right'></i>"
+            ],  
+            loop:true,
+            rtl: true
+                
+
+            }
+      
+      );
+    });
+
+</script>
+
+
+
+</div>                   

@@ -1,0 +1,51 @@
+	<div class="" ng-controller="signViewCTRL">
+		<div class="login-bottom">
+		<form  ng-submit="signView(data)">
+		    
+			<h2>Register</h2>
+			<div class="alert alert-success" ng-show="show.successMessageShow">{{successMessage}}</div>
+			<div class="alert alert-danger" ng-show="show.errMessageShow">{{errMessage}}</div>
+			<div class="jumbotron text-center" ng-show="show.loading">
+            
+                
+			    <i class="fa fa-spinner fa-spin" style="font-size:39px"></i>
+            
+             
+			</div>
+			<div class="col-md-12">
+				<div class="login-mail">
+					<input type="text" placeholder="Email" required="" ng-model="data.email"> 
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="login-mail">
+					<input type="text" placeholder="User Name" required="" ng-model="data.username"> 
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="login-mail">
+					<input type="password" placeholder="Password" required=""  ng-model="data.password">
+					<i class="fa fa-lock"></i>
+				</div>
+				<div class="login-mail">
+					<input type="password" placeholder="Repeated password" required="" ng-model="data.rePassword">
+					<i class="fa fa-lock"></i>
+				</div>
+                <div class="login-mail">
+					<input type="text" placeholder="Phone Number  ex: 01287137824" required="" ng-model="data.phone">
+					<i class="fa fa-phone"></i>
+				</div>
+
+	
+			</div>
+			<div class="col-md-6 login-do">
+				<label class="hvr-shutter-in-horizontal login-sub">
+					<input type="submit" value="Submit">
+					</label>
+					<p>Already register</p>
+				<a href="/logView" class="hvr-shutter-in-horizontal">Login</a>
+			</div>
+			<div class="clearfix"> </div>
+		</form>
+		</div>
+	</div>
+	
+	

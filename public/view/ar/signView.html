@@ -1,0 +1,54 @@
+    <link rel="stylesheet" href="/stylesheets/bootstrap-rtl.css">
+    <link rel="stylesheet" href="/stylesheets/styleRTL.css">
+
+		<div class="" ng-controller="signViewCTRL">
+		<div class="login-bottom">
+		<form  ng-submit="signView(data)">
+		    
+			<h2>انشاء حساب</h2>
+			<div class="alert alert-success" ng-show="show.successMessageShow">{{successMessage}}</div>
+			<div class="alert alert-danger" ng-show="show.errMessageShow">{{errMessage}}</div>
+			<div class="jumbotron text-center" ng-show="show.loading">
+            
+                
+			    <i class="fa fa-spinner fa-spin" style="font-size:39px"></i>
+            
+             
+			</div>
+			<div class="col-md-12">
+				<div class="login-mail">
+					<input type="text" placeholder="البريد الالكتروني" required="" ng-model="data.email"> 
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="login-mail">
+					<input type="text" placeholder="اسم المستخدم" required="" ng-model="data.username"> 
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="login-mail">
+					<input type="password" placeholder="كلمه المرور" required=""  ng-model="data.password">
+					<i class="fa fa-lock"></i>
+				</div>
+				<div class="login-mail">
+					<input type="password" placeholder="كرر كلمه المرور" required="" ng-model="data.rePassword">
+					<i class="fa fa-lock"></i>
+				</div>
+                <div class="login-mail">
+					<input type="text" placeholder="رقم الهاتف " required="" ng-model="data.phone">
+					<i class="fa fa-phone"></i>
+				</div>
+
+	
+			</div>
+			<div class="col-md-6 login-do">
+				<label class="hvr-shutter-in-horizontal login-sub">
+					<input type="submit" value="انشاء حساب">
+					</label>
+					<p>لديك حساب ؟</p>
+				<a ng-href="{{href.logView}}" class="hvr-shutter-in-horizontal">تسجيل الدخول</a>
+			</div>
+			<div class="clearfix"> </div>
+		</form>
+		</div>
+	</div>
+	
+	

@@ -1,0 +1,236 @@
+<div id="mobiles" >
+    
+    <div class="container">
+          <div class="searchHeaderWrapper">
+              
+           <span class="SearchTitle">
+               HOME / 
+           </span>
+           <span class="searchFor">
+             Search For "mobiles "
+           </span>
+          </div>
+           
+           
+     <style>
+               @media (min-width: 992px){
+                .col-md-2 {
+                        width: 7.666667%;
+                    }
+            }
+               .brandsIcon img {
+                    height: 68px;
+                }
+        </style>
+           
+<!--=================================================================
+                            Products
+====================================================================-->
+<br>
+<br>
+<div id="products">
+    
+	<div class="new_arrivals_agile_w3ls_info"> 
+		<div class="container">
+        <div class="sns-nav-tabs-warpper-icon"> 
+         <i class="fa fa-mobile"></i>
+    </div>
+      <div class="brandsIcon">
+        <div class="row">
+            
+        <div class="col-md-2">
+           <a href="/search/:samsung">
+               
+            <img src="/images/samsung.png" width="100%" alt="">
+           </a>
+        </div>
+                
+   <div class="col-md-2">
+           
+            <a href="/search/:tecno">
+               
+            <img src="/images/tecno.png" width="100%" alt="">
+           </a>
+           
+        </div> 
+        
+        <div class="col-md-2">
+            <a href="/search/:nokia">
+               
+            <img src="/images/nokia.png" width="100%" alt="">
+           </a>
+           
+        </div> 
+            
+         <div class="col-md-2">
+            <a href="/search/:apple">
+               
+            <img src="/images/apple.png" width="100%" alt="">
+           </a>
+        </div> 
+            
+            
+            
+        <div class="col-md-2">
+            <a href="/search/:lenovo">
+               
+            <img src="/images/lenovo.png" width="100%" alt="">
+           </a>
+        </div> 
+            
+            
+         <div class="col-md-2">
+            <a href="/search/:shiomi">
+               
+            <img src="/images/shomi.png" width="100%" alt="">
+           </a>
+        </div>  
+           
+            
+        <div class="col-md-2">
+            <a href="/search/:oppo">
+               
+            <img src="/images/Oppo.png" width="100%" alt="">
+           </a>
+        </div> 
+           
+        <div class="col-md-2">
+            <a href="/search/:sony">
+               
+            <img src="/images/sony.png" width="100%" alt="">
+           </a>
+        </div>  
+        
+        
+      <div class="col-md-2">
+            <a href="/search/:motorola">
+               
+            <img src="/images/motorola.png" width="100%" alt="">
+           </a>
+        </div>  
+           
+         <div class="col-md-2">
+            <a href="/search/:htc">
+               
+            <img src="/images/htc-logo-13.png" width="100%" alt="">
+           </a>
+        </div>  
+        
+         <div class="col-md-2">
+            <a href="/search/:huawei">
+               
+            <img src="/images/ha.png" width="100%" alt="">
+           </a>
+        </div>
+        
+         <div class="col-md-2">
+            <a href="/search/:asus">
+               
+            <img src="/images/asus.png" width="100%" alt="">
+           </a>
+        </div>
+            
+         <div class="col-md-2">
+            <a href="/search/:lg">
+               
+            <img src="/images/lg.png" width="100%" alt="">
+           </a>
+        </div>
+        
+        
+        
+        </div>
+               
+                
+
+        </div>
+        
+      
+<!--		    <h3 class="wthree_text_info">New <span>Arrivals</span></h3>		-->
+				<div id="horizontalTab">
+					<div class="resp-tabs-container">
+					<!--/tab_one-->
+						<div class="tab1">
+						<div class="container" ng-show="showNotFound">
+                        <br>
+						    <div class="jumbotron">
+						        <h3>
+						            There are no products matching the selection.
+						        </h3>
+						    </div>
+						</div>
+    <div class="col-md-3 product-men"  ng-repeat="data in mobileData123 | filter:ASDASD |  searchPagination: (currentPage - 1) * itemsPerPage | limitTo:itemsPerPage">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img  ng-src="/{{data.url.slice(7)}}" alt="" class="pro-image-front">
+										<img  ng-src="/{{data.url.slice(7)}}" class="pro-image-back">
+											<div class="men-cart-pro">
+<!--
+												<div class="inner-men-cart-pro">
+													<a ng-href="/productDetails/:{{data._id}}"  class="link-product-add-cart">Quick View</a>
+												</div>
+-->
+											</div>
+											<span class="product-new-top">New</span>
+											
+									</div>
+									<div class="item-info-product ">
+										<h4><a ng-href="/productDetails/:{{data._id}}" >{{data.name}}</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$ {{data.priceAfter}}</span>
+											<del>$ {{data.priceBefore}}</del>
+										</div>
+										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+															<form action="{{'/productDetails/:' + data._id}}">
+																<fieldset>
+																	<input type="hidden"   value="_cart" />
+																	<input type="hidden"  value="1" />
+																	<input type="hidden" value=" " />
+																	<input type="hidden" value="Formal Blue Shirt" />
+																	<input type="hidden" value="30.99" />
+																	<input type="hidden"  value="1.00" />
+																	<input type="hidden"  value="USD" />
+																	<input type="hidden" value=" " />
+																	<input type="hidden" value=" " />
+																	<input type="submit"  value="View More" class="button" />
+																</fieldset>
+															</form>
+														</div>
+																			
+									</div>
+								</div>
+							</div>
+
+
+							<div class="clearfix"></div>
+						</div>
+					
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+		</div>
+
+ 
+ <br>
+ <br>
+   <center>
+    
+       
+ <ul uib-pagination total-items="totalItems" items-per-page="itemsPerPage" ng-model="currentPage" ></ul>
+
+   </center>
+   
+    </div>
+    
+    
+    
+</div>
+
+
+
+
+<script>
+ 
+</script>
