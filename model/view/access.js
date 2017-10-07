@@ -9,10 +9,7 @@ var titlize = require('mongoose-title-case');
      priceAfter:{type : String , required :true},
      desc:{type : String , required :true},
      brand:{type : String , required :true},
-     url:{type : String , required :true},
-         cat:{type: String , required: true}
-
-     
+     url:{type : String , required :true}
  });
 
 
