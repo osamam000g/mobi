@@ -3,7 +3,7 @@
 //===================================================
 //                  Mobile CTRL 
 //====================================================
-app.controller('accessCTRL', function($scope , $http , $rootScope , $timeout){
+app.controller('accessCTRL', function($scope , $http , $rootScope , $timeout و $filter){
     $scope.showNotFound = false ;
                  $rootScope.loaderShow = true ;
      // console.log('accessCTRL');
@@ -16,19 +16,19 @@ app.controller('accessCTRL', function($scope , $http , $rootScope , $timeout){
                     $scope.itemsPerPage = 20;
                     $scope.currentPage= 1 ;
                  
-                 if($scope.totalItems == 0){
-                         $scope.showNotFound = true ;
+                 $scope.mobileData1 = $filter('filter')($scope.mobileData1, $routeParams.tab.slice(1));
+                 
+         if( $scope.mobileData1.length == 0){
+                       // console.log('$scope.mobileData111');
+                       // console.log($scope.mobileDataLenght);
+                         $rootScope.showNotFound = true ;
 
                  }else{
-                         $scope.showNotFound = false ;
+                       // console.log('$scope.mobileData');
+                       // console.log($scope.mobileData123.length);
+                         $rootScope.showNotFound = false ;
 
                  }
-             
-                    // // console.log($scope.mobileData);
-                    // console.log(response.data);
-                    // console.log($scope.totalItems);
-                    // console.log($scope.itemsPerPage);
-                    // console.log($scope.currentPage);
                  
                    $timeout(function(){
                      

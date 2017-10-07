@@ -15,7 +15,19 @@
           </div>
            
            
-    
+      <style>
+         @media (min-width: 992px){
+                .col-md-2 {
+                        width: 7.666667%;
+                    }
+            }
+               .brandsIcon img {
+                    height: 68px;
+                }
+         #products .col-md-2 {
+    border-left: 1px solid #ccc;
+}
+        </style>
            
 <!--=================================================================
                             Products
@@ -29,11 +41,133 @@
         <div class="sns-nav-tabs-warpper-icon"> 
          <i class="fa fa-mobile"></i>
     </div>
+        <div class="brandsIcon">
+        <div class="row">
+            
+       
+            
+        <div class="col-md-2">
+            <a href="/ar/search/:lenovo">
+               
+            <img src="/images/lenovo.png" width="100%" alt="">
+           </a>
+        </div> 
+            
+            
+         <div class="col-md-2">
+            <a href="/ar/search/:shiomi">
+               
+            <img src="/images/shomi.png" width="100%" alt="">
+           </a>
+        </div>  
+           
+            
+        <div class="col-md-2">
+            <a href="/ar/search/:oppo">
+               
+            <img src="/images/Oppo.png" width="100%" alt="">
+           </a>
+        </div> 
+           
+        <div class="col-md-2">
+            <a href="/ar/search/:sony">
+               
+            <img src="/images/sony.png" width="100%" alt="">
+           </a>
+        </div>  
+        
+        
+      <div class="col-md-2">
+            <a href="/ar/search/:motorola">
+               
+            <img src="/images/motorola.png" width="100%" alt="">
+           </a>
+        </div>  
+           
+         <div class="col-md-2">
+            <a href="/ar/search/:htc">
+               
+            <img src="/images/htc-logo-13.png" width="100%" alt="">
+           </a>
+        </div>  
+        
+         <div class="col-md-2">
+            <a href="/ar/search/:huawei">
+               
+            <img src="/images/ha.png" width="100%" alt="">
+           </a>
+        </div>
+        
+         <div class="col-md-2">
+            <a href="/ar/search/:asus">
+               
+            <img src="/images/asus.png" width="100%" alt="">
+           </a>
+        </div>
+            
+         <div class="col-md-2">
+            <a href="/ar/search/:lg">
+               
+            <img src="/images/lg.png" width="100%" alt="">
+           </a>
+        </div>
+        
+        
+                
+   <div class="col-md-2">
+           
+            <a href="/ar/search/:tecno">
+               
+            <img src="/images/tecno.png" width="100%" alt="">
+           </a>
+           
+        </div> 
+        
+         <div class="col-md-2">
+           <a href="/ar/search/:samsung" >
+               
+            <img src="/images/samsung.png" width="100%" alt="">
+           </a>
+        </div>
+        
+        <div class="col-md-2">
+            <a href="/ar/search/:nokia">
+               
+            <img src="/images/nokia.png" width="100%" alt="">
+           </a>
+           
+        </div> 
+            
+         <div class="col-md-2">
+            <a href="/ar/search/:apple">
+               
+            <img src="/images/apple.png" width="100%" alt="">
+           </a>
+        </div> 
+            
+            
+        
+        
+        
+        </div>
+               
+                
+
+        </div>
+      
 <!--		    <h3 class="wthree_text_info">New <span>Arrivals</span></h3>		-->
 				<div id="horizontalTab">
 					<div class="resp-tabs-container">
 					<!--/tab_one-->
 						<div class="tab1">
+						<div class="container" ng-show="showNotFound">
+                        <br>
+						    <div class="jumbotron">
+						        <h3>
+						            لا توجد نتائج  مطابقه    
+						        </h3>
+						    </div>
+						</div>
 						
 							<div class="col-md-3 product-men"  ng-repeat="data in mobileData | accessPagination: (currentPage - 1) * itemsPerPage | limitTo:itemsPerPage ">
 								<div class="men-pro-item simpleCart_shelfItem">

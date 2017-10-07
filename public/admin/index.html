@@ -30,12 +30,27 @@
 
 <link href="/stylesheets/custom.css" rel="stylesheet">
 
-
+<style>
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+span.name-caret.ng-binding {
+    font-size: 19px;
+    line-height: 56px;
+    padding-right: 26px !important;
+    border-left: 1px solid #ccc;
+    padding-top: 83px !important;
+    padding-left: 11px;
+    padding-bottom: 21px;
+    color: #27a8ab;
+    cursor: pointer;
+}
+    </style>
 
 </head>
 <body>
 
-<div id="wrapper" ng-app="adminMobi" ng-controller="mobiCTRL">
+<div id="wrapper" ng-app="adminMobi" ng-controller="mobiCTRL" class="ng-cloak">
     
     
      <nav class="navbar-default navbar-static-top" role="navigation">
@@ -69,7 +84,7 @@
 		  
 					<li class="dropdown" ng-show="profileBtn">
 		              <a  class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">{{email}}<i class="caret"></i></span>
-		              <img src="images/wo.jpg">
+<!--		              <img src="images/wo.jpg">-->
 		              </a>
 		              <ul class="dropdown-menu " role="menu">
 		            
